@@ -6,12 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F8E8CC882EDCF45D004839C8 /* Gifu in Frameworks */ = {isa = PBXBuildFile; productRef = F8E8CC872EDCF45D004839C8 /* Gifu */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F8F14B682E800BDB00231804 /* ARFaceFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARFaceFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F8F14B7A2E800BDD00231804 /* Exceptions for "ARFaceFilter" folder in "ARFaceFilter" target */ = {
+		F81E96C82E858FF2008EF9C5 /* Exceptions for "ARFaceFilter" folder in "ARFaceFilter" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,10 +25,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F8F14B6A2E800BDB00231804 /* ARFaceFilter */ = {
+		F81E96C12E858FF2008EF9C5 /* ARFaceFilter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				F8F14B7A2E800BDD00231804 /* Exceptions for "ARFaceFilter" folder in "ARFaceFilter" target */,
+				F81E96C82E858FF2008EF9C5 /* Exceptions for "ARFaceFilter" folder in "ARFaceFilter" target */,
 			);
 			path = ARFaceFilter;
 			sourceTree = "<group>";
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E8CC882EDCF45D004839C8 /* Gifu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +50,7 @@
 		F8F14B5F2E800BDB00231804 = {
 			isa = PBXGroup;
 			children = (
-				F8F14B6A2E800BDB00231804 /* ARFaceFilter */,
+				F81E96C12E858FF2008EF9C5 /* ARFaceFilter */,
 				F8F14B692E800BDB00231804 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,10 +79,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F8F14B6A2E800BDB00231804 /* ARFaceFilter */,
+				F81E96C12E858FF2008EF9C5 /* ARFaceFilter */,
 			);
 			name = ARFaceFilter;
 			packageProductDependencies = (
+				F8E8CC872EDCF45D004839C8 /* Gifu */,
 			);
 			productName = ARFaceFilter;
 			productReference = F8F14B682E800BDB00231804 /* ARFaceFilter.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = F8F14B5F2E800BDB00231804;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F8E8CC862EDCF45C004839C8 /* XCRemoteSwiftPackageReference "Gifu" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F8F14B692E800BDB00231804 /* Products */;
 			projectDirPath = "";
@@ -148,9 +157,10 @@
 				DEVELOPMENT_TEAM = 6252C56UB4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARFaceFilter/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To detect face";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -180,9 +190,10 @@
 				DEVELOPMENT_TEAM = 6252C56UB4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARFaceFilter/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To detect face";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -345,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8E8CC862EDCF45C004839C8 /* XCRemoteSwiftPackageReference "Gifu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kaishin/Gifu.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8E8CC872EDCF45D004839C8 /* Gifu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8E8CC862EDCF45C004839C8 /* XCRemoteSwiftPackageReference "Gifu" */;
+			productName = Gifu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F8F14B602E800BDB00231804 /* Project object */;
 }
